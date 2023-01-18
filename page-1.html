@@ -58,6 +58,16 @@
   font-family: sans-serif;
   background-size: cover;
 }
+		
+input.next:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.next{
+	background-color: #04AA6D;
+    color: white;
+}
 showcase div h1{ 
 	margin-top: 2cm;
 	margin-left: 2cm;
@@ -126,15 +136,9 @@ showcase div p,li{
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
 				<div id="navbar" class="collapse">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="index.html">About Me</a></li>
-						<li><a href="index.html">Education</a></li>
-						<li><a href="index.html" >Experience</a></li>
-						<li><a href="index.html">Research</a></li>
-						<li><a href="index.html">Interest Areas</a></li>
-						<li><a href="index.html">Skills</a></li>
-						<li><a href="index.html">Certificates</a></li>
-						<li><a href="index.html">Contact</a></li>
+						<form>
+							<input class="next" type="button" value="Home" onclick="history.back()"> 
+						</form>
 					</ul>
 				</div>
 			</nav>
@@ -160,6 +164,10 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 				<h2 style="font-family: Tahoma; color: rgb(255, 230, 0);">Imagination is more important than knowledge<br>(Sir Albert Einstein) </h2>
 				
 			</marquee>
+			<br>
+			<form>
+				<input class="next" type="button" value="Home" onclick="history.back()"> 
+			</form>
 			<showcase>
 				<div>
 					<h1>Employee Attrition Analysis Using CatBoost</h1>
